@@ -335,7 +335,7 @@ _w['_sydConvTranslation'] = {
   welcomeMessageItemTitle3: '🎨 获得创意灵感',
   welcomeMessageItemLabel4: '更多创意中的新增功能：',
   warmWelcomeTitle: '欢迎使用百晓通bing',
-  welcomeSubtitleText: '由 AI 支持的网页版 Copilot',
+  welcomeSubtitleText: '微信搜索百晓通应答体验小程序版本',
   workToggleDescription: '以及你的结果包括哪些内容',
   feedbackFirstMessage: '非常抱歉没有帮助到你。是否可以详细说明你不喜欢的方面?',
   feedbackPromptMessage: '感谢提醒。请提供反馈，以便必应团队可以查看。',

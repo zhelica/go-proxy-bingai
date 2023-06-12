@@ -48,8 +48,8 @@ var (
 		"https://www.bing.com",
 	}
 	USER_TOKEN_COOKIE_NAME = "_U"
-	RAND_COOKIE_INDEX_NAME = "百晓通AI_Rand_CK"
-	RAND_IP_COOKIE_NAME    = "百晓通AI_Rand_IP"
+	RAND_COOKIE_INDEX_NAME = "BingAI_Rand_CK"
+	RAND_IP_COOKIE_NAME    = "BingAI_Rand_IP"
 	PROXY_WEB_PREFIX_PATH  = "/web/"
 	PROXY_WEB_PAGE_PATH    = PROXY_WEB_PREFIX_PATH + "index.html"
 )

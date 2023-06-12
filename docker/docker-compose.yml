@@ -1,27 +1,27 @@
 version: '3'
 
 services:
-  go-proxy-bingai:
+  go-proxy-百晓通AI:
     # 镜像名称
-    image: adams549659584/go-proxy-bingai
+    image: adams549659584/go-proxy-百晓通AI
     # 容器名称
-    container_name: go-proxy-bingai  
+    container_name: go-proxy-百晓通AI  
     # 自启动
     restart: unless-stopped
     ports:
       - 8080:8080
     # environment:
-    #   - Go_Proxy_BingAI_SOCKS_URL=192.168.0.88:1070
-    #   - Go_Proxy_BingAI_SOCKS_USER=xxx
-    #   - Go_Proxy_BingAI_SOCKS_PWD=xxx
-    #   - Go_Proxy_BingAI_USER_TOKEN_1=xxx
-    #   - Go_Proxy_BingAI_USER_TOKEN_2=xxx
+    #   - Go_Proxy_百晓通AI_SOCKS_URL=192.168.0.88:1070
+    #   - Go_Proxy_百晓通AI_SOCKS_USER=xxx
+    #   - Go_Proxy_百晓通AI_SOCKS_PWD=xxx
+    #   - Go_Proxy_百晓通AI_USER_TOKEN_1=xxx
+    #   - Go_Proxy_百晓通AI_USER_TOKEN_2=xxx
   
-#   go-proxy-bingai:
+#   go-proxy-百晓通AI:
 #     # 镜像名称
-#     image: adams549659584/go-proxy-bingai
+#     image: adams549659584/go-proxy-百晓通AI
 #     # 容器名称
-#     container_name: go-proxy-bingai
+#     container_name: go-proxy-百晓通AI
 #     build:
 #       context: ../
 #       dockerfile: docker/Dockerfile      
@@ -33,9 +33,9 @@ services:
 #     ports:
 #       - 8888:8080
 #     environment:
-#       - Go_Proxy_BingAI_SOCKS_URL=192.168.0.88:1070
-#       # - Go_Proxy_BingAI_SOCKS_USER=xxx
-#       # - Go_Proxy_BingAI_SOCKS_PWD=xxx        
+#       - Go_Proxy_百晓通AI_SOCKS_URL=192.168.0.88:1070
+#       # - Go_Proxy_百晓通AI_SOCKS_USER=xxx
+#       # - Go_Proxy_百晓通AI_SOCKS_PWD=xxx        
 
 # networks:
 #   MyNetwork:

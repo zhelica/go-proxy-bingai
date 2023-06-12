@@ -93,7 +93,7 @@ const exportPrompt = () => {
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url;
-  link.download = 'BingAIPrompts.json';
+  link.download = '百晓通AIPrompts.json';
   link.click();
   URL.revokeObjectURL(url);
   messgae.success('导出提示词库成功');

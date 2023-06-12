@@ -1,7 +1,7 @@
 package main
 
 import (
-	"adams549659584/go-proxy-bingai/api"
+	"adams549659584/go-proxy-百晓通AI/api"
 	"log"
 	"net/http"
 	"os"
@@ -23,7 +23,7 @@ func main() {
 	}
 	addr := ":" + port
 
-	log.Println("Starting BingAI Proxy At " + addr)
+	log.Println("Starting 百晓通AI Proxy At " + addr)
 
 	srv := &http.Server{
 		Addr:         addr,

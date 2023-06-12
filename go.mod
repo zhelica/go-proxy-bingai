@@ -1,4 +1,4 @@
-module adams549659584/go-proxy-bingai
+module adams549659584/go-proxy-百晓通AI
 
 go 1.20
 

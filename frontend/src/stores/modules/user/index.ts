@@ -11,8 +11,8 @@ export const useUserStore = defineStore(
   () => {
     const maxTryCreateConversationIdCount = 10;
     const userTokenCookieName = '_U';
-    const randIpCookieName = 'BingAI_Rand_IP';
-    const authKeyCookieName = 'BingAI_Auth_Key';
+    const randIpCookieName = '百晓通AI_Rand_IP';
+    const authKeyCookieName = '百晓通AI_Auth_Key';
 
     const sysConfig = ref<SysConfig>();
 

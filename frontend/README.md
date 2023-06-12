@@ -1,4 +1,4 @@
-# go-proxy-百晓通AI
+# go-proxy-bingai
 
 This template should help get you started developing with Vue 3 in Vite.
 

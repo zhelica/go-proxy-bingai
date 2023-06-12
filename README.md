@@ -4,7 +4,7 @@
 
 ⭐ Bing 官方聊天服务器（相对较快和稳定，推荐）不可用时，可参考以下方案
 
-  > 1. 可用 ModHeader 添加 X-Forwarded-For 请求头，对应 URL 是 wss://sydney.bing.com/sydney/ChatHub，具体可参考 [issues #71](https://github.com/adams549659584/go-proxy-百晓通AI/issues/71) 及 https://zhuanlan.zhihu.com/p/606655303
+  > 1. 可用 ModHeader 添加 X-Forwarded-For 请求头，对应 URL 是 wss://sydney.bing.com/sydney/ChatHub，具体可参考 [issues #71](https://github.com/adams549659584/go-proxy-bingai/issues/71) 及 https://zhuanlan.zhihu.com/p/606655303
 
   > 2. 本地部署再部署一份作为聊天中转服务，或下载 Release 直接运行，自定义聊天服务器中填入 http://localhost:8080，并选择。
 
@@ -76,19 +76,19 @@
 
 - https://bing-railway.vcanbb.top
 
-- https://go-proxy-百晓通AI-production.up.railway.app
+- https://go-proxy-bingai-production.up.railway.app
 
 ### Vercel 搭建
 
 - https://bing-vercel.vcanbb.top
 
-- https://go-proxy-百晓通AI-adams549659584.vercel.app
+- https://go-proxy-bingai-adams549659584.vercel.app
 
 ### Render 搭建
 
 - https://bing-render.vcanbb.top
 
-- https://go-proxy-百晓通AI.onrender.com
+- https://go-proxy-bingai.onrender.com
 
 ## 设置用户
 
@@ -134,10 +134,10 @@ Go_Proxy_百晓通AI_AUTH_KEY=xxx
 
 ```bash
 # 运行容器 监听8080 端口
-docker run -d -p 8080:8080 --name go-proxy-百晓通AI --restart=unless-stopped adams549659584/go-proxy-百晓通AI
+docker run -d -p 8080:8080 --name go-proxy-bingai --restart=unless-stopped adams549659584/go-proxy-bingai
 
 # 配置 socks 环境变量
-docker run -e Go_Proxy_百晓通AI_SOCKS_URL=192.168.0.88:1070 -e Go_Proxy_百晓通AI_SOCKS_USER=xxx -e Go_Proxy_百晓通AI_SOCKS_PWD=xxx -d -p 8080:8080 --name go-proxy-百晓通AI --restart=unless-stopped adams549659584/go-proxy-百晓通AI
+docker run -e Go_Proxy_百晓通AI_SOCKS_URL=192.168.0.88:1070 -e Go_Proxy_百晓通AI_SOCKS_USER=xxx -e Go_Proxy_百晓通AI_SOCKS_PWD=xxx -d -p 8080:8080 --name go-proxy-bingai --restart=unless-stopped adams549659584/go-proxy-bingai
 ```
 
 - docker compose 示例
@@ -146,11 +146,11 @@ docker run -e Go_Proxy_百晓通AI_SOCKS_URL=192.168.0.88:1070 -e Go_Proxy_百�
 version: '3'
 
 services:
-  go-proxy-百晓通AI:
+  go-proxy-bingai:
     # 镜像名称
-    image: adams549659584/go-proxy-百晓通AI
+    image: adams549659584/go-proxy-bingai
     # 容器名称
-    container_name: go-proxy-百晓通AI  
+    container_name: go-proxy-bingai  
     # 自启动
     restart: unless-stopped
     ports:
@@ -165,7 +165,7 @@ services:
 
 ### Release
 
-在 [GitHub Releases](https://github.com/adams549659584/go-proxy-百晓通AI/releases) 下载适用于对应平台的压缩包，解压后可得到可执行文件 go-proxy-百晓通AI，直接运行即可。
+在 [GitHub Releases](https://github.com/adams549659584/go-proxy-bingai/releases) 下载适用于对应平台的压缩包，解压后可得到可执行文件 go-proxy-bingai，直接运行即可。
 
 ### Railway
 
@@ -190,7 +190,7 @@ RAILWAY_DOCKERFILE_PATH=docker/Dockerfile
 
 > ⭐ Vercel 部署不支持 Websocket ，需选择 官方聊天服务器 或 Cloudflare
 
-一键部署，点这里 => [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/adams549659584/go-proxy-百晓通AI&project-name=go-proxy-百晓通AI&repository-name=go-proxy-百晓通AI-vercel)
+一键部署，点这里 => [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/adams549659584/go-proxy-bingai&project-name=go-proxy-bingai&repository-name=go-proxy-bingai-vercel)
 
 ![Vercel 一键部署](./docs/img/vercel-1.png)
 
@@ -198,7 +198,7 @@ RAILWAY_DOCKERFILE_PATH=docker/Dockerfile
 
 ### Render
 
-一键部署，点这里 => [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/adams549659584/go-proxy-百晓通AI)
+一键部署，点这里 => [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/adams549659584/go-proxy-bingai)
 
 ![Render 一键部署](./docs/img/render-1.png)
 

@@ -1,8 +1,8 @@
 package api
 
 import (
-	"adams549659584/go-proxy-百晓通AI/api/helper"
-	"adams549659584/go-proxy-百晓通AI/common"
+	"adams549659584/go-proxy-bingai/api/helper"
+	"adams549659584/go-proxy-bingai/common"
 	"net/http"
 )
 
